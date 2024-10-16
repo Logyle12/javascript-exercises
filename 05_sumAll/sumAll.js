@@ -12,6 +12,16 @@ const sumAll = function(m, n) {
         // Initialize sum to accumulate the total
         let sum = 0;
 
+        // Loop from start to end, inclusive
+        while (start <= end) {
+            // Add the current value of start to the sum
+            sum += start;
+            // Increment start for the next iteration
+            ++start;
+        }
+
+        // Return the computed sum
+        return sum;
     } else {
         // Return an error message if either m or n is invalid
         return "ERROR";
