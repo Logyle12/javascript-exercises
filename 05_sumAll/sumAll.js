@@ -5,6 +5,12 @@ const sumAll = function(m, n) {
     // Check if both m and n are valid
     if (isValid(m) && isValid(n)) {
         
+        // Determine the starting point (the smaller value)
+        let start = Math.min(m, n);
+        // Determine the ending point (the larger value)
+        let end = Math.max(m, n);
+        // Initialize sum to accumulate the total
+        let sum = 0;
 
     } else {
         // Return an error message if either m or n is invalid
