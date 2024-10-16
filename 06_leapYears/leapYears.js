@@ -8,7 +8,14 @@ const isLeapYear = year =>
     year % 100 != 0 || 
     year % 400 == 0; 
 
-
+// Check if the provided year (leapYear) is a leap year
+if (isLeapYear(leapYear)) {
+    // If it is a leap year, return true
+    return true;
+} else {
+    // If it is not a leap year, return false
+    return false;
+}
 
 };
 
