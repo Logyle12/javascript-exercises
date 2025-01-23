@@ -17,7 +17,7 @@ const multiply = function(array) {
 };
 
 const power = function(a, b) {
-	
+	return a ** b;
 };
 
 const factorial = function(a) {
