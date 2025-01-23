@@ -21,7 +21,11 @@ const power = function(a, b) {
 };
 
 const factorial = function(a) {
-	
+  let runningTotal = 1;
+	for (let index = a; index >= 1; index--) {
+    runningTotal *= index;
+  }
+  return runningTotal;
 };
 
 // Do not edit below this line
