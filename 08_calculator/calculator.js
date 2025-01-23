@@ -12,7 +12,8 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
-
+  const multiplyTotal = array.reduce((runningTotal, currentValue) => runningTotal * currentValue);
+  return multiplyTotal;
 };
 
 const power = function(a, b) {
