@@ -5,6 +5,8 @@ const fibonacci = function(n) {
         if (num  <=2) {
             break;
         }
+        const nextNumber = sequence[i - 1] + sequence[i];
+        sequence.push(nextNumber);
     }
 
 };
