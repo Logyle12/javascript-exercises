@@ -12,6 +12,9 @@ const findTheOldest = function(persons) {
     })
     ages.sort((a, b) => a - b);
     const oldestAge = ages.pop();
+
+    const oldestPerson = persons.filter((person) => person.yearOfDeath - person.yearOfBirth === oldestAge);
+    return oldestPerson[0];
 };
 
 // Do not edit below this line
