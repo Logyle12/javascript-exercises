@@ -8,7 +8,8 @@ const fibonacci = function(n) {
         const nextNumber = sequence[i - 1] + sequence[i];
         sequence.push(nextNumber);
     }
-
+    
+    return n > 0 ? sequence[num - 1] : n == 0 ? 0 : "OOPS";
 };
 
 // Do not edit below this line
