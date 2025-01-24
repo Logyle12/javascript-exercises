@@ -10,7 +10,8 @@ const findTheOldest = function(persons) {
 
         return person.yearOfDeath - person.yearOfBirth;
     })
-
+    ages.sort((a, b) => a - b);
+    const oldestAge = ages.pop();
 };
 
 // Do not edit below this line
